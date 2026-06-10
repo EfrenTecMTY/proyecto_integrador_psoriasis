@@ -3,18 +3,18 @@
     "AUC-ROC test": 0.9987,
     "Balanced Acc. test": 0.9798,
     "F1 weighted test": 0.9833,
-    "Tiempo (s)": 5.5
+    "Tiempo (s)": 5.68
   },
   "SVM_RBF_CLUST (FT)": {
     "AUC-ROC test": 0.9966,
     "Balanced Acc. test": 0.9681,
     "F1 weighted test": 0.9669,
-    "Tiempo (s)": 1.75
+    "Tiempo (s)": 1.74
   },
   "LR_L2 (FT)": {
     "AUC-ROC test": 0.9832,
     "Balanced Acc. test": 0.9277,
     "F1 weighted test": 0.9339,
-    "Tiempo (s)": 0.66
+    "Tiempo (s)": 0.59
   }
 }
