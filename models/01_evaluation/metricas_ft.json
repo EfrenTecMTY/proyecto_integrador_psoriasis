@@ -3,18 +3,21 @@
     "AUC-ROC test": 0.9902,
     "Balanced Acc. test": 0.9635,
     "F1 weighted test": 0.9605,
-    "Tiempo (s)": 102.61
+    "Recall": 0.96,
+    "Tiempo (s)": 100.31
   },
   "LR_L1_FULL (FT)": {
     "AUC-ROC test": 0.9851,
     "Balanced Acc. test": 0.9238,
     "F1 weighted test": 0.9289,
-    "Tiempo (s)": 141.31
+    "Recall": 0.928,
+    "Tiempo (s)": 138.65
   },
   "LR_L2_FULL (FT)": {
     "AUC-ROC test": 0.9857,
     "Balanced Acc. test": 0.9437,
     "F1 weighted test": 0.9447,
-    "Tiempo (s)": 0.72
+    "Recall": 0.944,
+    "Tiempo (s)": 0.59
   }
 }

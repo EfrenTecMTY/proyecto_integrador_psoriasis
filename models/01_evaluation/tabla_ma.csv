@@ -1,5 +1,5 @@
-,Modelo,Estrategia,AUC-ROC test,Balanced Acc. test,F1 weighted test,AUC CV μ,AUC CV σ,Tiempo (s),_modelo,_X_test,_y_test
-LR_L2_FULL,LR_L2,FULL,0.9857,0.9437,0.9447,0.9766,0.0075,4.96,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l2',
+,Modelo,Estrategia,AUC-ROC test,Balanced Acc. test,F1 weighted test,Recall,AUC CV μ,AUC CV σ,Tiempo (s),_modelo,_X_test,_y_test
+LR_L2_FULL,LR_L2,FULL,0.9857,0.9437,0.9447,0.9444,0.9766,0.0075,4.98,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l2',
                    random_state=42)","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
@@ -90,7 +90,7 @@ LR_L2_FULL,LR_L2,FULL,0.9857,0.9437,0.9447,0.9766,0.0075,4.96,"LogisticRegressio
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LR_L1_FULL,LR_L1,FULL,0.9902,0.969,0.9683,0.9719,0.0076,19.96,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l1',
+LR_L1_FULL,LR_L1,FULL,0.9902,0.969,0.9683,0.9667,0.9719,0.0076,18.65,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l1',
                    random_state=42, solver='saga')","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
@@ -181,7 +181,7 @@ LR_L1_FULL,LR_L1,FULL,0.9902,0.969,0.9683,0.9719,0.0076,19.96,"LogisticRegressio
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LR_EN_FULL,LR_EN,FULL,0.9921,0.969,0.9683,0.9734,0.0093,9.23,"LogisticRegression(class_weight='balanced', l1_ratio=0.5, max_iter=5000,
+LR_EN_FULL,LR_EN,FULL,0.9921,0.969,0.9683,0.9667,0.9734,0.0093,9.76,"LogisticRegression(class_weight='balanced', l1_ratio=0.5, max_iter=5000,
                    penalty='elasticnet', random_state=42, solver='saga')","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
@@ -272,7 +272,7 @@ LR_EN_FULL,LR_EN,FULL,0.9921,0.969,0.9683,0.9734,0.0093,9.23,"LogisticRegression
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-SVM_LIN_FULL,SVM_LIN,FULL,0.9775,0.927,0.9218,0.9658,0.0138,0.21,"SVC(class_weight='balanced', kernel='linear', probability=True, random_state=42)","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
+SVM_LIN_FULL,SVM_LIN,FULL,0.9775,0.927,0.9218,0.9111,0.9658,0.0138,0.24,"SVC(class_weight='balanced', kernel='linear', probability=True, random_state=42)","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
 358       -11.991756       2.041175       2.203042        2.240682   
@@ -362,7 +362,7 @@ SVM_LIN_FULL,SVM_LIN,FULL,0.9775,0.927,0.9218,0.9658,0.0138,0.21,"SVC(class_weig
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LDA_FULL,LDA,FULL,0.8778,0.8302,0.8572,0.7832,0.0282,0.26,LinearDiscriminantAnalysis(),"     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
+LDA_FULL,LDA,FULL,0.8778,0.8302,0.8572,0.8889,0.7832,0.0282,0.27,LinearDiscriminantAnalysis(),"     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
 358       -11.991756       2.041175       2.203042        2.240682   
@@ -452,7 +452,7 @@ LDA_FULL,LDA,FULL,0.8778,0.8302,0.8572,0.7832,0.0282,0.26,LinearDiscriminantAnal
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-DT_FULL,DT,FULL,0.8689,0.8698,0.8889,0.8727,0.018,0.3,"DecisionTreeClassifier(class_weight='balanced', max_depth=5, random_state=42)","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
+DT_FULL,DT,FULL,0.8689,0.8698,0.8889,0.9111,0.8727,0.018,0.34,"DecisionTreeClassifier(class_weight='balanced', max_depth=5, random_state=42)","     ACE 209749_s_at  ACE 227463_at  AHR 202820_at  AQP3 203747_at  \
 318         0.113210      -0.030211       0.399168        0.418650   
 322         0.122326      -0.026839       0.395458        0.370803   
 358       -11.991756       2.041175       2.203042        2.240682   
@@ -542,7 +542,7 @@ DT_FULL,DT,FULL,0.8689,0.8698,0.8889,0.8727,0.018,0.3,"DecisionTreeClassifier(cl
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LR_L2_CLUSTERING,LR_L2,CLUSTERING,0.9457,0.9468,0.9374,0.9361,0.0097,0.08,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l2',
+LR_L2_CLUSTERING,LR_L2,CLUSTERING,0.9457,0.9468,0.9374,0.9222,0.9361,0.0097,0.09,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l2',
                    random_state=42)","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
@@ -633,7 +633,7 @@ LR_L2_CLUSTERING,LR_L2,CLUSTERING,0.9457,0.9468,0.9374,0.9361,0.0097,0.08,"Logis
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LR_L1_CLUSTERING,LR_L1,CLUSTERING,0.9584,0.9183,0.9213,0.9433,0.0093,3.08,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l1',
+LR_L1_CLUSTERING,LR_L1,CLUSTERING,0.9584,0.9183,0.9213,0.9222,0.9433,0.0093,3.25,"LogisticRegression(class_weight='balanced', max_iter=5000, penalty='l1',
                    random_state=42, solver='saga')","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
@@ -724,7 +724,7 @@ LR_L1_CLUSTERING,LR_L1,CLUSTERING,0.9584,0.9183,0.9213,0.9433,0.0093,3.08,"Logis
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LR_EN_CLUSTERING,LR_EN,CLUSTERING,0.9511,0.9468,0.9374,0.9403,0.0097,2.03,"LogisticRegression(class_weight='balanced', l1_ratio=0.5, max_iter=5000,
+LR_EN_CLUSTERING,LR_EN,CLUSTERING,0.9511,0.9468,0.9374,0.9222,0.9403,0.0097,2.15,"LogisticRegression(class_weight='balanced', l1_ratio=0.5, max_iter=5000,
                    penalty='elasticnet', random_state=42, solver='saga')","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
@@ -815,7 +815,7 @@ LR_EN_CLUSTERING,LR_EN,CLUSTERING,0.9511,0.9468,0.9374,0.9403,0.0097,2.03,"Logis
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-SVM_LIN_CLUSTERING,SVM_LIN,CLUSTERING,0.9181,0.9071,0.9061,0.9305,0.006,0.13,"SVC(class_weight='balanced', kernel='linear', probability=True, random_state=42)","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
+SVM_LIN_CLUSTERING,SVM_LIN,CLUSTERING,0.9181,0.9071,0.9061,0.9,0.9305,0.006,0.13,"SVC(class_weight='balanced', kernel='linear', probability=True, random_state=42)","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
 358       0.313484           3.670114          -1.810495       2.269855   
@@ -905,7 +905,7 @@ SVM_LIN_CLUSTERING,SVM_LIN,CLUSTERING,0.9181,0.9071,0.9061,0.9305,0.006,0.13,"SV
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-LDA_CLUSTERING,LDA,CLUSTERING,0.9079,0.8524,0.887,0.8989,0.0511,0.09,LinearDiscriminantAnalysis(),"     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
+LDA_CLUSTERING,LDA,CLUSTERING,0.9079,0.8524,0.887,0.9333,0.8989,0.0511,0.12,LinearDiscriminantAnalysis(),"     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
 358       0.313484           3.670114          -1.810495       2.269855   
@@ -995,7 +995,7 @@ LDA_CLUSTERING,LDA,CLUSTERING,0.9079,0.8524,0.887,0.8989,0.0511,0.09,LinearDiscr
 331    Psoriasis
 477    Psoriasis
 Name: Condition/control, Length: 125, dtype: str"
-DT_CLUSTERING,DT,CLUSTERING,0.9278,0.9206,0.936,0.9063,0.0182,0.18,"DecisionTreeClassifier(class_weight='balanced', max_depth=5, random_state=42)","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
+DT_CLUSTERING,DT,CLUSTERING,0.9278,0.9206,0.936,0.9556,0.9063,0.0182,0.18,"DecisionTreeClassifier(class_weight='balanced', max_depth=5, random_state=42)","     CD4 216424_at  SOCS3 206360_s_at  CIITA 211884_s_at  IL4 207538_at  \
 318       0.230955           0.100429           0.474646       0.478390   
 322       0.243953           0.108713           0.493414       0.502709   
 358       0.313484           3.670114          -1.810495       2.269855   
